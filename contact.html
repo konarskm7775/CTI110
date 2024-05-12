@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4DB1EA;
+        }
+    </style>
+</head>
+<nav>
+        <a href="home.html">Home</a>
+        <a href="mental_health_topics.html">Mental Health Topics</a>
+        <a href="resources.html">Resources</a> <!-- Link to Page 3 -->
+        <a href="contact.html">Contact</a>
+    </nav>
+<body>
+    <section>
+        <h2>Personal Stories and Testimonials</h2>
+        <p>Share personal stories and testimonials from individuals who have experienced mental health challenges.</p>
+    </section>
+    <form action="submit_feedback.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="Share your story">Share your story:</label>
+        <textarea id="Share your story" name="Share your story" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
